@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hotel.HomepageUserController" >
+   <children>
+      <AnchorPane prefHeight="114.0" prefWidth="694.0" style="-fx-background-color: #FF9600;">
+         <children>
+            <ImageView fitHeight="99.0" fitWidth="246.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@photos/hotel-png-hd.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="114.0" prefHeight="357.0" prefWidth="158.0" style="-fx-background-color: #f0e68c;">
+         <children>
+            <AnchorPane layoutX="5.0" layoutY="21.0" prefHeight="67.0" prefWidth="149.0" style="-fx-background-color: orange;">
+               <children>
+                  <Label layoutX="9.0" layoutY="6.0" text="Name:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="9.0" layoutY="40.0" text="Rank:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nameLabel" layoutX="52.0" layoutY="6.0" prefHeight="18.0" prefWidth="91.0" />
+                  <Label fx:id="rankLabel" layoutX="52.0" layoutY="39.0" prefHeight="18.0" prefWidth="91.0" />
+               </children></AnchorPane>
+            <Button fx:id="logOutButton" alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" layoutX="37.0" layoutY="304.0" mnemonicParsing="false" onAction="#logOutButtonOnAction" prefHeight="26.0" prefWidth="82.0" text="Log Out" textAlignment="RIGHT" />
+            <ImageView fitHeight="17.0" fitWidth="23.0" layoutX="48.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@photos/logOut.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="checkInButton" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="173.0" layoutY="185.0" mnemonicParsing="false" onAction="#CheckInButtonOnAction" prefHeight="99.0" prefWidth="146.0" style="-fx-background-color: #F7AC40;" text="Check In" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="46.0" fitWidth="37.0" layoutX="228.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photos/checkin.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="roomBookingButton" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="345.0" layoutY="180.0" mnemonicParsing="false" onAction="#roomBookingButtonClicked" prefHeight="99.0" prefWidth="146.0" style="-fx-background-color: #F7AC40;" text="Room Booking" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="45.0" fitWidth="43.0" layoutX="397.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photos/roomBookingIcon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="roomsButton" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="515.0" layoutY="180.0" mnemonicParsing="false" onAction="#roomsButtonClicked" prefHeight="99.0" prefWidth="146.0" style="-fx-background-color: #F7AC40;" text="Rooms" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="45.0" fitWidth="43.0" layoutX="566.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photos/bed.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="checkOutButton" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="246.0" layoutY="316.0" mnemonicParsing="false" onAction="#checkOutButtonClicked" prefHeight="99.0" prefWidth="146.0" style="-fx-background-color: #F7AC40;" text="Check Out" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelBooking" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="442.0" layoutY="315.0" mnemonicParsing="false" onAction="#cancelBookingButtonClicked" prefHeight="99.0" prefWidth="146.0" style="-fx-background-color: #F7AC40;" text="Cancel Booking" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="45.0" fitWidth="58.0" layoutX="299.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photos/Checkout.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="43.0" layoutX="494.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photos/cancelBookingicon.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="287.0" layoutY="65.0" prefHeight="67.0" prefWidth="170.0" style="-fx-background-color: #f0e68c; -fx-region-border: black;">
+         <children>
+            <Text fontSmoothingType="LCD" layoutX="22.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Home Page" wrappingWidth="126.40000000000009">
+               <font>
+                  <Font name="Pristina" size="28.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
